@@ -1,0 +1,42 @@
+.picker-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.picker-left-button, .picker-right-button {
+    flex-grow: 1;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+}
+
+.picker-left-button:hover, .picker-right-button:hover {
+    background-color: blue;
+}
+
+.picker-left-button text, .picker-right-button text {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.picker-center {
+    flex-grow: 4;
+}
+
+.picker-center img {
+    margin: auto;
+    display: block;
+}
+
+.picker-center select {
+    width: 95%;
+    display: block;
+    margin: auto;            
+}
