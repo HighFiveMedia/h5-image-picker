@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Picker</title>
+
+	<link rel="stylesheet" type="text/css" href="image-picker-style.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+	<script src="image-picker.js"></script>
+	
+    <script>
+        function init() {
+            $("#image-picker").imagePicker({
+                width: "500px"
+            });
+        }
+
+        $(init);
+    </script>
+</head>
+<body>
+	<select id='image-picker'>
+        <option data-img-alt="logo1" data-img-class="first" data-img-src="images/logo1.png" value="logo1">Logo 1</option>
+		<option data-img-alt="justaddthesun" data-img-src="images/justaddthesun.png" value="justaddthesun">Just Add the Sun</option>
+		<option data-img-alt="valentines" data-img-src="images/valentines.png" value="valentines">Valentine's Day</option>
+		<option data-img-alt="birthday" data-img-src="images/birthday.png" value="birthday">Birthday</option>
+		<option data-img-alt="housewarming" data-img-src="images/housewarming.png" value="housewarming">Housewarming</option>
+		<option data-img-alt="congrats" data-img-src="images/congrats.png" value="congrats">Congratulations</option>
+		<option data-img-alt="sympathy" data-img-src="images/sympathy.png" value="sympathy">Sympathy</option>
+		<option data-img-alt="thanks" data-img-src="images/thanks.png" value="thanks">Thank You</option>
+		<option data-img-alt="mothersday" data-img-src="images/mothersday.png" value="mothersday">Mothers' Day</option>
+		<option data-img-alt="fathersday" data-img-src="images/fathersday.png" value="fathersday">Fathers' Day</option>
+		<option data-img-alt="logo2" data-img-src="images/logo2.png" value="logo2">Logo 2</option>
+		<option data-img-alt="christmas" data-img-class="last" data-img-src="images/christmas.png" value="christmas">Christmas</option>
+	</select>
+</body>
+</html>
